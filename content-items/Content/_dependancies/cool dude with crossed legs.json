@@ -1,0 +1,33 @@
+{
+  "id": "b3dd0f9a-84a6-41e0-9bf3-d1f74ed449b4",
+  "contentRepositoryId": "5d4af2ccc9e77c00015fa183",
+  "folderId": null,
+  "body": {
+    "_meta": {
+      "name": "cool-dude-with-crossed-legs",
+      "schema": "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/image.json",
+      "deliveryKey": "dude-with-legs"
+    },
+    "image": {
+      "_meta": {
+        "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+      },
+      "id": "f9549d3d-f616-487c-b1ad-fad5152f2c7d",
+      "name": "man-business-suit",
+      "endpoint": "bloblogltd",
+      "defaultHost": "i1-qa.adis.ws"
+    },
+    "altText": "cool dude in specs with a red tie and crossed legs!!!!!!!"
+  },
+  "version": 97,
+  "label": "cool dude with crossed legs",
+  "status": "ACTIVE",
+  "createdBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "locale": "en-US",
+  "createdDate": "2019-12-09T16:23:40.436Z",
+  "lastModifiedBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "lastModifiedDate": "2021-03-03T09:35:46.646Z",
+  "lastPublishedVersion": 97,
+  "lastPublishedDate": "2021-03-25T11:51:17.725Z",
+  "deliveryId": "b3dd0f9a-84a6-41e0-9bf3-d1f74ed449b4"
+}

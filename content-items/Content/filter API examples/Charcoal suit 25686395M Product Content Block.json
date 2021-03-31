@@ -1,0 +1,36 @@
+{
+  "id": "2a78ea67-4a95-4c50-bd73-21e361ae1cac",
+  "contentRepositoryId": "5d4af2ccc9e77c00015fa183",
+  "folderId": "605b533dc9e77c00012aa5d0",
+  "body": {
+    "_meta": {
+      "name": "Product Content Block - striped wool suit",
+      "schema": "https://shema-examples.com/pdp-content-block"
+    },
+    "hidden": false,
+    "content": [
+      {
+        "_meta": {
+          "name": "Charoal suit Image dc-static-blog-nextjs",
+          "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+        },
+        "id": "2e7dab4e-23e7-4f40-b07c-015a48a744e9",
+        "contentType": "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/image.json"
+      }
+    ],
+    "sku": "25686395M",
+    "categoryId": "mens-clothing-suits",
+    "productFamily": "Wool",
+    "priority": 1
+  },
+  "version": 3,
+  "label": "Charcoal suit 25686395M Product Content Block",
+  "status": "ACTIVE",
+  "createdBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "createdDate": "2021-03-24T15:23:39.043Z",
+  "lastModifiedBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "lastModifiedDate": "2021-03-25T11:14:30.776Z",
+  "lastPublishedVersion": 3,
+  "lastPublishedDate": "2021-03-25T11:14:54.332Z",
+  "deliveryId": "2a78ea67-4a95-4c50-bd73-21e361ae1cac"
+}

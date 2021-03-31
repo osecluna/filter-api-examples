@@ -1,0 +1,129 @@
+{
+   "$schema":"http://bigcontent.io/cms/schema/v1/schema#",
+   "allOf":[
+      {
+         "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+      }
+   ],
+   "id":"https://schema.localhost.com/contentasset.json",
+   "title":"Content Asset",
+   "description":"Content Asset",
+   "type":"object",
+   "properties": {
+      "content-asset-id": {
+         "type": "string",
+         "title": "Content Asset ID",
+         "minLength": 1,
+         "maxLength": 256
+      },
+      "name": {
+        "type": "string",
+		"minLength": 0,
+		"maxLength": 255,
+		"title": "Content Asset Name",
+		"description": ""
+      },
+      "online": {
+        "type": "boolean",
+        "title": "Online"
+      },
+      "searchable" : {
+        "type": "boolean",
+        "title": "Searchable"
+      },
+     "library-folders" : {
+			"type" : "array",
+			"title": "Folders",
+			"items":{
+				"type":"string",
+				"title": "Folder IDs",
+				"enum":[
+                "amplience",
+	              "customer-service",
+                  "buyers-guides",
+	              "blog",
+				  "OTT",
+				  "homepage",
+				  "about-us",
+	              "other"
+	          	]
+			},
+			"minItems":1,
+			"maxItems":8
+		},
+		"page-title": {
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 255,
+			"title": "Page Meta Title",
+			"description": ""
+		},
+		"page-description": {
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 255,
+			"title": "Page Meta Description",
+			"description": ""
+		},
+		"page-keywords": {
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 255,
+			"title": "Page Keywords",
+			"description": ""
+		},
+		"page-url" : {
+			"type" : "string",
+			"title": "Page URL",
+			"minLength": 1,
+			"maxLength": 256
+		},
+      "content-asset-body": {
+            "allOf": [
+                {
+                    "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+                },
+                {
+                    "properties": {
+                        "values": {
+                            "items": {
+                                "properties": {
+                                    "value": {
+                                        "title": "Localized Content",
+                                        "type": "object",
+                                        "allOf": [{
+                                            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                                        },
+                                        {
+                                            "properties": {
+                                                "contentType": {
+                                                    "title": "Page Content Options",
+                                                    "enum": [
+                                                            "https://lovehoney.com/@amplience/dynamic-content-accelerators/dist/contentTypes/splitbanner.json",
+                                                            "https://lovehoney.com/@amplience/dynamic-content-accelerators/dist/contentTypes/text.json"
+
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                        ]
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+   } ,
+
+
+
+
+
+
+
+   "required": ["content-asset-id","library-folders"],
+   "propertyOrder": ["content-asset-id","name","library-folders","online","searchable","content-asset-body","page-title","page-description","page-keywords","page-url"]
+}

@@ -1,0 +1,75 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "http://paul.com/hierarchy/product.json",
+
+	"title": "Title",
+	"description": "Description",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	
+	"type": "object",
+	"properties": {
+		"productTitle": {
+			"title": "Product Name",
+			"description": "description",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 100
+		},
+		"productImage": {
+			"title": "Product Image",
+			"allOf": [
+				{ "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link" }
+			]
+		},
+		"price": {
+			"title": "Price of the product",
+			"description": "description",
+			"type": "number",
+			"minimum": 0,
+			"maximum": 1000
+		},
+		"hierarchyLinkedContentList": {
+			"title": "List of linked hierarchy nodes",
+			"type": "array",
+			"minItems": 0,
+			"maxItems": 10,
+			"items": {
+				"allOf": [
+					{ "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link" },
+					{
+						"properties": {
+							"contentType": {
+								"enum": [
+									"http://paul.com/hierarchy/sub-level-category.json"
+								]
+							}
+						}
+					}
+				]
+			}
+		},
+		"hierarchyLinkedContentSingle": {
+			"title": "Single linked content node",
+			"allOf": [
+				{ "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link" },
+				{
+					"properties": {
+						"contentType": {
+							"enum": [
+								"http://paul.com/hierarchy/sub-level-category.json"
+							]
+						}
+					}
+				}
+			]
+		}
+		
+	},
+	"propertyOrder": [],
+	"required": ["productTitle"]
+}

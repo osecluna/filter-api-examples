@@ -1,0 +1,99 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://ampproduct.example.com/category-banner.json",
+
+	"title": "Title",
+	"description": "Description",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	
+	"type": "object",
+	"properties": {
+    "image": {
+      "title": "Image",
+      "description": "insert an image",
+      "type": "object",
+      "anyOf": [
+        {
+          "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+        }
+      ]
+    },
+    "altText": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 150,
+      "title": "Alt text",
+      "description": "insert image alt text"
+    },
+	  "header": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 255,
+      "title": "Header",
+      "description": "add header"
+    },
+    "text": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 255,
+      "title": "Paragraph text",
+      "description": "add text"
+    },
+    "buttonLabel": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 255,
+      "title": "Button label",
+      "description": ""
+    },
+    "buttonAction": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 2000,
+      "title": "Button action",
+      "description": "A relative URL, absolute URL or an ID"
+    },
+    "hierarchyNodes": {
+			"title": "Related Categories",
+			"type": "array",
+			"minItems": 0,
+			"maxItems": 10,
+			"items": {
+				"allOf": [
+					{ "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link" },
+					{
+						"properties": {
+							"contentType": {
+								"enum": [
+									"https://hierarchy-pdp.bigcontent.io/child-node.json"
+								]
+							}
+						}
+					}
+				]
+			}
+		},
+    "notarray": {
+      "title": "non array hierarchy",
+      "allOf": [
+        { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link" },
+        {
+          "properties": {
+            "contentType": {
+              "enum": [
+                "https://hierarchy-pdp.bigcontent.io/child-node.json"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "propertyOrder": ["image", "altText"],
+  "required": []
+}

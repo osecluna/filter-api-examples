@@ -1,0 +1,16 @@
+{
+  "contentTypeUri": "https://schema.localhost.com/text.json",
+  "status": "ACTIVE",
+  "settings": {
+    "label": "Text",
+    "icons": [],
+    "visualizations": [
+      {
+        "label": "Localhost",
+        "templatedUri": "http://localhost:3000/visualization?vse={{vse.domain}}&content={{content.sys.id}}",
+        "default": true
+      }
+    ],
+    "cards": []
+  }
+}

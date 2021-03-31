@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://schema-examples.com/delivery-key-olly",
+    "title": "Delivery key",
+    "description": "How to define a delivery key in your content form",
+    "$comment": "Docs: https://amplience.com/docs/development/schema-examples/coreconcepts/delivery-key.html",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "type": "object",
+    "properties": {
+        "_meta": {
+            "type": "object",
+            "properties": {
+                "deliveryKey": {
+                    "type": "string",
+                    "title": "URL",
+                    "description": "Enter the URL"
+                }
+            }
+        }
+    },
+    "propertyOrder": []
+}

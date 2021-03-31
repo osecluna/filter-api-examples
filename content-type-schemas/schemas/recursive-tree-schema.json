@@ -1,0 +1,53 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://bigcontent.io/recursive-tree",
+    "title": "Title",
+    "description": "Example showing how to combine content types. Prerequisites: 'https://schema-examples.com/media' must also be registered",
+    "$comment": "Docs: https://amplience.com/docs/development/schema-examples/coreconcepts/combiningschemas.html",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "type": "object",
+    "properties": {
+        "title": {
+            "title": "Title",
+            "description": "some title",
+            "type": "string",
+            "minLength": 0
+        },
+        "body": {
+            "title": "Body",
+            "description": "some text",
+            "type": "string",
+            "minLength": 0
+        },
+        "image": {
+            "title": "An image",
+            "allOf": [
+                { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link" }
+            ]
+        },
+        "linked-content": {
+            "title": "Linked content",
+            "type": "array",
+            "minItems": 0,
+            "items": {
+                "allOf": [
+                    { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link" },
+                    {
+                        "properties": {
+                            "contentType": {
+                                "enum": [
+                                    "https://bigcontent.io/recursive-tree"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "propertyOrder": []
+}

@@ -1,0 +1,33 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://localhost.com:8080/content-field-example",
+
+	"title": "Title",
+	"description": "Description",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	
+	"type": "object",
+	"properties": {
+		"primaryText": {
+			"title": "Primary",
+			"description": "description",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 50,
+			"ui:extension": {
+				"name": "content-field-local",
+				"params": {
+					"min": 0,
+					"max": 50,
+					"value": 5
+				}
+			}
+		}
+	},
+	"propertyOrder": []
+}

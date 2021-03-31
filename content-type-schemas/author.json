@@ -1,0 +1,5 @@
+{
+  "body": "./schemas/author-schema.json",
+  "schemaId": "https://schema.localhost.com/author.json",
+  "validationLevel": "CONTENT_TYPE"
+}

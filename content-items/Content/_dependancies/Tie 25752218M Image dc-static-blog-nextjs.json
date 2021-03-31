@@ -1,0 +1,31 @@
+{
+  "id": "8d1347b5-abad-473b-af3c-d57c93d1ac46",
+  "contentRepositoryId": "5d4af2ccc9e77c00015fa183",
+  "folderId": null,
+  "body": {
+    "_meta": {
+      "name": "Tie 25752218M Image dc-static-blog-nextjs",
+      "schema": "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/image.json"
+    },
+    "image": {
+      "_meta": {
+        "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+      },
+      "id": "e87af545-ec32-4718-941e-8f4f8d7f76de",
+      "name": "25752218M_YELLOSI_PZ",
+      "endpoint": "bloblogltd",
+      "defaultHost": "cdn.media.amplience-qa.net"
+    },
+    "altText": "Yellow tie"
+  },
+  "version": 1,
+  "label": "Tie 25752218M Image dc-static-blog-nextjs",
+  "status": "ACTIVE",
+  "createdBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "createdDate": "2021-03-24T17:02:44.293Z",
+  "lastModifiedBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "lastModifiedDate": "2021-03-24T17:02:44.293Z",
+  "lastPublishedVersion": 1,
+  "lastPublishedDate": "2021-03-30T11:22:48.977Z",
+  "deliveryId": "8d1347b5-abad-473b-af3c-d57c93d1ac46"
+}

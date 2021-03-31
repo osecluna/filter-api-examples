@@ -1,0 +1,69 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://schema-examples.com/validations",
+    "title": "Validations",
+    "description": "A collection of validations for strings, numbers and arrays",
+    "$comment": "Docs: https://amplience.com/docs/development/schema-examples/coreconcepts/validations.html",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "type": "object",
+    "properties": {
+        "simplestringwithmaxandmin": {
+            "title": "Simple string with maximum length",
+            "description": "A string that can contain up to 255 characters",
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 255
+        },
+        "datewithpatternvalidation": {
+            "title": "Date validated with a pattern",
+            "description": "Creation date (YYYY-MM-DD)",
+            "type": "string",
+            "maxLength": 10,
+            "minLength": 10,
+            "pattern": "^[0-9]{4}-((0[1-9])|(1[0-2]))-((0[1-9])|([1-2][0-9])|(3[0-1]))$"
+        },
+        "urlslugpatternvalidation": {
+            "title": "URL slug",
+            "description": "URL slug (a-z and 0-9)",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100,
+            "pattern": "^[a-z0-9-]+$"
+        },
+        "numbervalidationexample": {
+            "title": "Number validation example",
+            "description": "Enter a rating between 10- 100. (must be a multiple of 10)",
+            "type": "integer",
+            "minimum": 10,
+            "maximum": 100,
+            "multipleOf": 10
+        },
+        "stringlistofenums": {
+            "title": "Strings defined in enum",
+            "description": "Choose up to 3 string values",
+            "type": "array",
+            "minItems": 0,
+            "maxItems": 3,
+            "uniqueItems": true,
+            "items": {
+                "type": "string",
+                "enum": [
+                    "Electrics",
+                    "Home",
+                    "Kitchen",
+                    "Lighting",
+                    "Computers"
+                ]
+            }
+        }
+    },
+    "propertyOrder": [],
+    "required": [
+        "simplestringwithmaxandmin",
+        "stringlistofenums"
+    ]
+}

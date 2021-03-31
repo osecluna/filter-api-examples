@@ -1,0 +1,23 @@
+{
+  "id": "5cf5df1f-ce1b-4355-9c2b-df590cd6196d",
+  "contentRepositoryId": "5d4af2ccc9e77c00015fa183",
+  "folderId": null,
+  "body": {
+    "_meta": {
+      "name": "cdv2-blog-text",
+      "schema": "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/text.json"
+    },
+    "text": "Content Delivery 2 is our next generation delivery API. It's optimised for speed and ease of use and allows you to retrieve content by ID or delivery key. You can also retrieve multiple items in the same request."
+  },
+  "version": 1,
+  "label": "CDV2 blog text",
+  "status": "ACTIVE",
+  "createdBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "locale": "en-US",
+  "createdDate": "2020-06-08T15:19:57.706Z",
+  "lastModifiedBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "lastModifiedDate": "2020-12-11T10:31:26.942Z",
+  "lastPublishedVersion": 1,
+  "lastPublishedDate": "2021-03-17T17:13:45.023Z",
+  "deliveryId": "5cf5df1f-ce1b-4355-9c2b-df590cd6196d"
+}

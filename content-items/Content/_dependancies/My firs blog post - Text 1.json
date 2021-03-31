@@ -1,0 +1,23 @@
+{
+  "id": "cb132ea7-f9f9-4774-98df-2d0cbe3d64b3",
+  "contentRepositoryId": "5d4af2ccc9e77c00015fa183",
+  "folderId": null,
+  "body": {
+    "_meta": {
+      "name": "my-firs-blog-post---text-1",
+      "schema": "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/text.json"
+    },
+    "text": "Chalk and cheese bavarian bergkase boursin. Croque monsieur gouda say cheese jarlsberg jarlsberg the big cheese dolcelatte edam. Pepper jack swiss cheese strings stinking bishop blue castello fondue hard cheese cheesy grin. Pecorino blue castello smelly cheese cut the cheese the big cheese port-salut.\n\nCottage cheese caerphilly swiss. Chalk and cheese goat fromage frais stilton brie cottage cheese cheese triangles cheesy grin. Cheese and biscuits say cheese taleggio port-salut parmesan croque monsieur mascarpone queso. Dolcelatte rubber cheese.\n\nManchego queso when the cheese comes out everybody's happy. Melted cheese bocconcini halloumi say cheese feta feta cauliflower cheese cauliflower cheese. Who moved my cheese manchego chalk and cheese cut the cheese cheese and biscuits ricotta bocconcini cut the cheese. Hard cheese danish fontina boursin pepper jack cheese and biscuits paneer.\n\nCottage cheese cheesy grin parmesan. Cauliflower cheese brie roquefort smelly cheese cheddar fromage st. agur blue cheese fromage. Pecorino lancashire macaroni cheese taleggio manchego gouda emmental st. agur blue cheese. Fondue bavarian bergkase manchego monterey jack brie feta the big cheese blue castello. Babybel cheese on toast."
+  },
+  "version": 1,
+  "label": "My firs blog post - Text 1",
+  "status": "ACTIVE",
+  "createdBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "locale": "en-US",
+  "createdDate": "2020-06-10T13:21:26.991Z",
+  "lastModifiedBy": "a282d1e3-ba24-4218-8ba4-26eac84d9e78",
+  "lastModifiedDate": "2020-11-30T15:42:24.074Z",
+  "lastPublishedVersion": 1,
+  "lastPublishedDate": "2021-03-25T11:51:17.725Z",
+  "deliveryId": "cb132ea7-f9f9-4774-98df-2d0cbe3d64b3"
+}

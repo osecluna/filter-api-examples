@@ -1,0 +1,48 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://example.com/product-ranking",
+
+	"title": "Product",
+	"description": "Product ranking example",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	
+	"type": "object",
+	"properties": {
+		"name": {
+			"title": "Name",
+			"description": "Product Name",
+			"type": "string",
+			"minLength": 3,
+			"maxLength": 10
+		},
+		"ranking": {
+			"title": "Ranking",
+			"description": "Product ranking",
+			"type": "number"
+		}
+		
+	},
+	"propertyOrder": [
+		"name",
+		"ranking"
+	],
+	"required": [
+		"name",
+		"ranking"
+	],
+	"trait:sortable": {
+		"sortBy": [
+			{
+				"key": "default",
+				"paths": [
+					"/ranking"
+				]
+			}
+		]
+	}
+}

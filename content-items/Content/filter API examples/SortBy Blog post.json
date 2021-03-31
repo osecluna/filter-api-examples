@@ -1,0 +1,53 @@
+{
+  "id": "09a55388-01eb-4e43-b390-280c58d86a34",
+  "contentRepositoryId": "5d4af2ccc9e77c00015fa183",
+  "folderId": "605b533dc9e77c00012aa5d0",
+  "body": {
+    "_meta": {
+      "name": "SortBy Blog post",
+      "schema": "https://schema-examples.com/blogpost-filter-and-sort",
+      "deliveryKey": "sortBy"
+    },
+    "authors": [
+      {
+        "_meta": {
+          "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+        },
+        "contentType": "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/author.json",
+        "id": "cdc5b2da-2ce0-4fa7-8c01-0be18f61e81a"
+      }
+    ],
+    "image": {
+      "_meta": {
+        "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+      },
+      "contentType": "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/image.json",
+      "id": "ccb69eeb-ece7-498c-8ba8-8a461363ea02"
+    },
+    "content": [
+      {
+        "_meta": {
+          "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+        },
+        "contentType": "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/text.json",
+        "id": "1938eeb9-efc8-44fb-a2c6-413bf172c35a"
+      }
+    ],
+    "title": "New sortBy traits",
+    "category": "Homewares",
+    "date": "2020-03-09",
+    "ranking": 15,
+    "description": "Use the new filter API with a sortBy trait to sort your list of content items",
+    "readTime": 6
+  },
+  "version": 10,
+  "label": "SortBy Blog post",
+  "status": "ACTIVE",
+  "createdBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "createdDate": "2021-03-11T14:53:23.519Z",
+  "lastModifiedBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "lastModifiedDate": "2021-03-24T14:57:25.312Z",
+  "lastPublishedVersion": 10,
+  "lastPublishedDate": "2021-03-25T11:17:16.106Z",
+  "deliveryId": "09a55388-01eb-4e43-b390-280c58d86a34"
+}

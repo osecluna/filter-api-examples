@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://example.com/product-ranking-slot",
+    "title": "Product Ranking Slot",
+    "description": "A slot that can contain the tutorial banner and carousel",
+    "$comment": "Docs: https://amplience.com/docs/development/schema-examples/slots/tutorial-slot.html",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "type": "object",
+    "properties": {
+        "slotContent": {
+            "title": "Content",
+            "description": "description",
+            "type": "array",
+            "minItems": 0,
+            "maxItems": 5,
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                    },
+                    {
+                        "properties": {
+                            "contentType": {
+                                "enum": [
+                                    "https://example.com/product-ranking"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "propertyOrder": [],
+    "required": [
+        "slotContent"
+    ]
+}

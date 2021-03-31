@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/rich-text.json",
+  "title": "Rich Text",
+  "description": "A Rich Text Component",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "text": {
+      "type": "string",
+      "title": "Text",
+      "description": "Enter textual content here",
+      "validation": "Please enter less than 6000 characters",
+      "format": "markdown",
+      "minLength": 0,
+      "maxLength": 6000
+    },
+    "textAlign": {
+      "title": "Text Alignment",
+      "description": "Aligning text",
+      "type": "string",
+      "enum": ["left", "center", "right"]
+    },
+    "padding": {
+      "title": "Distance from border",
+      "description": "Vertical padding from border",
+      "type": "string",
+      "enum": ["10%", "25%", "50%"]
+    }
+  },
+  "propertyOrder": ["text", "textAlign", "padding"]
+}

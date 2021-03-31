@@ -1,0 +1,160 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id": "https://schema.localhost.com/algolia-blogpost.json",
+	"title": "Blog Post",
+	"description": "A bloblog post",
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	"type": "object",
+	"properties": {
+		"title": {
+			"title": "Title",
+			"description": "Used for heading and SEO title tag",
+			"type": "string",
+			"minLength": 1,
+			"maxLength": 150
+		},
+		"date": {
+			"title": "Creation date",
+			"description": "Creation date (YYYY-MM-DD)",
+			"type": "string",
+			"maxLength": 10,
+			"minLength": 10,
+      "pattern": "^[0-9]{4}-((0[1-9])|(1[0-2]))-(([0-2][0-9])|(3[0-1]))$"
+		},
+		"description": {
+			"title": "Description",
+			"description": "Used for blog listing page and SEO description",
+			"type": "string",
+			"minLength": 1,
+			"maxLength": 200
+		},
+		"image": {
+			"title": "Image",
+			"allOf": [
+				{
+					"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+				},
+				{
+					"properties": {
+						"contentType": {
+							"enum": [
+								"https://schema.localhost.com/image.json"
+							]
+						}
+					}
+				}
+			]
+		},
+		"urlSlug": {
+			"title": "Url slug",
+			"description": "Url friendly slug",
+			"type": "string",
+			"minLength": 1,
+			"maxLength": 100,
+			"pattern": "^[a-z0-9-]+$"
+		},
+		"tags": {
+			"title": "Tags",
+			"description": "Blog tags",
+			"type": "array",
+			"minItems": 0,
+			"maxItems": 10,
+			"items": {
+				"type": "string",
+				"minLength": 0,
+				"maxLength": 100,
+				"title": "Tag",
+				"description": ""
+			}
+		},
+		"readTime": {
+			"title": "Read time",
+			"description": "The time it takes to read the blog",
+			"type": "integer"
+		},
+		"authors": {
+			"title": "Blog author",
+			"description": "Article author(s) - max 3",
+			"type": "array",
+			"min": 1,
+			"max": 3,
+			"items": {
+				"allOf": [
+					{
+						"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+					},
+					{
+						"properties": {
+							"contentType": {
+								"enum": [
+									"https://schema.localhost.com/author.json"
+								]
+							}
+						}
+					}
+				]
+			}
+		},
+		"content": {
+			"title": "Content",
+			"description": "",
+			"type": "array",
+			"minItems": 1,
+			"maxItems": 20,
+			"items": {
+				"allOf": [
+					{
+						"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+					},
+					{
+						"properties": {
+							"contentType": {
+								"title": "Content",
+								"enum": [
+									"https://schema.localhost.com/image.json",
+									"https://schema.localhost.com/video.json",
+									"https://schema.localhost.com/text.json"
+								]
+							}
+						}
+					}
+				]
+			}
+		},
+		"searchTerm": {
+			"title": "title",
+			"description": "description",
+			"type": "string",
+			"ui:extension": {
+				"name": "algolia-search-term-builder"
+			},
+			"minLength": 0,
+			"maxLength": 200
+		}
+	},
+	"propertyOrder": [
+		"title",
+		"authors",
+		"date",
+		"description",
+		"image",
+		"urlSlug",
+		"tags",
+		"readTime",
+		"content"
+	],
+  "required": [
+    "title",
+    "authors",
+    "date",
+    "description",
+    "image",
+    "urlSlug",
+    "readTime",
+    "content"
+  ]
+}

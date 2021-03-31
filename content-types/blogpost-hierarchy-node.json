@@ -1,0 +1,10 @@
+{
+  "contentTypeUri": "https://schema-examples.com/blogpost-hierarchy-node",
+  "status": "ACTIVE",
+  "settings": {
+    "label": "Blog post as hierarchy node",
+    "icons": [],
+    "visualizations": [],
+    "cards": []
+  }
+}

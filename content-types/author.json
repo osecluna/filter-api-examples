@@ -1,0 +1,10 @@
+{
+  "contentTypeUri": "https://schema.localhost.com/author.json",
+  "status": "ACTIVE",
+  "settings": {
+    "label": "Author",
+    "icons": [],
+    "visualizations": [],
+    "cards": []
+  }
+}

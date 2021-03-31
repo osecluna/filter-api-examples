@@ -1,0 +1,36 @@
+{
+  "id": "4010177c-1afc-4c8d-b159-fe8a85b2f707",
+  "contentRepositoryId": "5d4af2ccc9e77c00015fa183",
+  "folderId": "605b533dc9e77c00012aa5d0",
+  "body": {
+    "_meta": {
+      "name": "Charcoal suit 25686514M Product Content Block",
+      "schema": "https://shema-examples.com/pdp-content-block"
+    },
+    "hidden": false,
+    "content": [
+      {
+        "_meta": {
+          "name": "Charcoal suit mens-clothing-suits Image dc-static-blog-nextjs",
+          "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+        },
+        "id": "467ad9a4-6801-4bbd-8903-062e230afaf3",
+        "contentType": "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/image.json"
+      }
+    ],
+    "sku": "25686514M",
+    "categoryId": "mens-clothing-suits",
+    "productFamily": "Wool",
+    "priority": 4
+  },
+  "version": 2,
+  "label": "Charcoal suit 25686514M Product Content Block",
+  "status": "ACTIVE",
+  "createdBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "createdDate": "2021-03-24T16:59:31.640Z",
+  "lastModifiedBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "lastModifiedDate": "2021-03-25T11:15:18.980Z",
+  "lastPublishedVersion": 2,
+  "lastPublishedDate": "2021-03-25T11:15:40.870Z",
+  "deliveryId": "4010177c-1afc-4c8d-b159-fe8a85b2f707"
+}

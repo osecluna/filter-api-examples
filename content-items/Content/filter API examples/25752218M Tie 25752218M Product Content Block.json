@@ -1,0 +1,36 @@
+{
+  "id": "f1bef233-917a-4dc2-85a6-6c832f68487b",
+  "contentRepositoryId": "5d4af2ccc9e77c00015fa183",
+  "folderId": "605b533dc9e77c00012aa5d0",
+  "body": {
+    "_meta": {
+      "name": "Tie 25752218M Product Content Block",
+      "schema": "https://shema-examples.com/pdp-content-block"
+    },
+    "hidden": false,
+    "content": [
+      {
+        "_meta": {
+          "name": "Cobalti tie 25752218M Image dc-static-blog-nextjs",
+          "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+        },
+        "id": "26c853d3-ce8e-4953-895e-e333c4c9b330",
+        "contentType": "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/image.json"
+      }
+    ],
+    "sku": "25752218M",
+    "categoryId": "mens-accessories-ties",
+    "productFamily": "Silk",
+    "priority": 4
+  },
+  "version": 4,
+  "label": "25752218M Tie 25752218M Product Content Block",
+  "status": "ACTIVE",
+  "createdBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "createdDate": "2021-03-24T17:02:52.393Z",
+  "lastModifiedBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "lastModifiedDate": "2021-03-25T11:14:09.632Z",
+  "lastPublishedVersion": 4,
+  "lastPublishedDate": "2021-03-30T12:34:27.276Z",
+  "deliveryId": "f1bef233-917a-4dc2-85a6-6c832f68487b"
+}

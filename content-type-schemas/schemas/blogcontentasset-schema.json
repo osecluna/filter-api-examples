@@ -1,0 +1,86 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "http://schema.example.com/blogcontentasset.json",
+	"title": "Blog Content Asset",
+	"description": "Blog Content Asset",
+	"allOf": [{
+		"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+	}],
+	"propertyOrder": [
+		"content-asset-id",
+		"library-folders",
+		"page-url",
+		"title",
+		"content",
+		"snippet"
+	],
+	"type": "object",
+	"properties": {
+		"content-asset-id": {
+			"type": "string",
+			"title": "Content Asset ID",
+			"minLength": 1,
+			"maxLength": 256
+		},
+		"library-folders": {
+			"type": "array",
+			"title": "Folders",
+			"items": {
+				"type": "string",
+				"title": "Folder",
+				"enum": [
+					"mens-blog",
+					"womens-blog",
+					"shoes-blog",
+					"suits-blog",
+					"dresses-blog",
+					"blog",
+					"blog-archives"
+				]
+			},
+			"minItems": 1,
+			"maxItems": 3
+		},
+		"page-url": {
+			"type": "string",
+			"title": "Page URL",
+			"minLength": 1,
+			"maxLength": 256
+		},
+		"title": {
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 255,
+			"title": "Title",
+			"description": ""
+		},
+		"content": {
+			"type": "array",
+			"items": {
+				"allOf": [{
+						"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+					},
+					{
+						"properties": {
+							"contentType": {
+								"title": "Content",
+								"enum": [
+									"https://schema.localhost.com/text.json",
+									"https://schema.localhost.com/image.json",
+									"https://schema.localhost.com/video.json"
+								]
+							}
+						}
+					}
+				]
+			},
+			"minItems": 0,
+			"maxItems": 20,
+			"title": "Content",
+			"description": ""
+		}
+	},
+	"required": [
+		"content-asset-id"
+	]
+}

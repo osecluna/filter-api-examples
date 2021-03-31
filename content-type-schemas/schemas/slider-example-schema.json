@@ -1,0 +1,40 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://schema-examples.com/slider-example",
+    "title": "Media content item",
+    "description": "Content with integrated slider",
+    "$comment": "Docs: https://amplience.com/docs/development/schema-examples/coreconcepts/media.html",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "type": "object",
+    "properties": {
+        "image": {
+            "title": "Image",
+            "allOf": [
+                {
+                    "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+                }
+            ]
+        },
+        "altimagetext": {
+            "title": "Alt image text",
+            "description": "The text to be displayed if the image cannot be displayed",
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 100
+        },
+        "ui:extension": {
+            "name": "simple-slider",
+            "type": "object",
+            "params": {
+                    "min": 0,
+                    "max": 20,
+                    "value": 7
+                }
+        }
+    },
+    "propertyOrder": []
+}

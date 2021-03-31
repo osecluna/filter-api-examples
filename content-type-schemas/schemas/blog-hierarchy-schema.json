@@ -1,0 +1,80 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://schema-examples.com/blog-hierarchy",
+
+	"title": "Blog Category",
+	"description": "Category page that can contain blog posts.",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		},
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v2/hierarchy#/definitions/hierarchy-node"
+		}
+	],
+
+	"trait:hierarchy": {
+		"childContentTypes": [
+			"https://schema-examples.com/blog-hierarchy",
+			"https://schema-examples.com/blogpost-hierarchy-node"
+		]
+	},
+	
+	
+	"type": "object",
+	"properties": {
+		"_meta":{
+			"type":"object",
+			"properties":{
+				"deliveryKey":{
+				"type":"string",
+				"title":"Delivery key",
+				"description": "The delivery key is used as the URL slug"
+				}
+			}
+		},
+		"title": {
+			"title": "Title",
+			"description": "HTML title tag",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 100
+		},
+		"ranking": {
+			"title": "Ranking",
+			"description": "description",
+			"type": "number",
+			"minimum": 0,
+			"maximum": 100
+		},
+		"image": {
+			"title": "Image",
+			"allOf": [
+				{ "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link" }
+			]
+		},
+		"propertyName1": {
+			"title": "title",
+			"description": "description",
+			"type": "string",
+			"enum": [
+				"Option One",
+				"Option Two",
+				"Option Three"
+			]
+		}
+	},
+	"propertyOrder": [],
+	"required": ["title"],
+	"trait:sortable": {
+		"sortBy": [
+			{
+				"key": "default",
+				"paths": ["/title","/ranking"]
+			}
+		]
+
+    }
+
+}

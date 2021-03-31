@@ -1,0 +1,36 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "http://algolia-search-ui-extension.com/demo.json",
+
+	"title": "Title",
+	"description": "Description",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	
+	"type": "object",
+	"properties": {
+		"propertyName1": {
+			"title": "Title",
+			"description": "Enter a title for your related content panel, then search below",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 100
+		},
+		"searchTerm": {
+			"title": "title",
+			"description": "description",
+			"type": "string",
+			"ui:extension": {
+				"name": "algolia-search-term-builder"
+			},
+			"minLength": 0,
+			"maxLength": 200
+		}
+		
+	},
+	"propertyOrder": []
+}

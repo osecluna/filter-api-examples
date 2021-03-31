@@ -1,0 +1,234 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/delivery-keys-and-filter-by/child.json",
+  "title": "Trait - filter by example",
+  "description": "Description",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "_meta": {
+      "type": "object",
+      "properties": {
+        "deliveryKey": {
+          "type": "string",
+          "title": "Delivery key",
+          "description": "Delivery key"
+        }
+      },
+      "required": [
+        "deliveryKey"
+      ]
+    },
+    "LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER": {
+      "title": "title",
+      "type": "object",
+      "properties": {
+        "sortby1": {
+          "title": "sortby1",
+          "description": "description",
+          "type": "string",
+          "minLength": 100,
+          "maxLength": 1000
+        },
+        "sortby2": {
+          "title": "sortby2",
+          "description": "description",
+          "type": "string",
+          "minLength": 100,
+          "maxLength": 1000
+        },
+        "sortby3": {
+          "title": "sortby3",
+          "description": "description",
+          "type": "string",
+          "minLength": 100,
+          "maxLength": 1000
+        },
+        "sortby4": {
+          "title": "sortby4",
+          "description": "description",
+          "type": "string",
+          "minLength": 100,
+          "maxLength": 1000
+        },
+        "sortby5": {
+          "title": "sortby5",
+          "description": "description",
+          "type": "string",
+          "minLength": 100,
+          "maxLength": 1000
+        },
+        "filterby1": {
+          "title": "filterby1",
+          "description": "description",
+          "type": "string",
+          "minLength": 1000,
+          "maxLength": 1000
+        },
+        "filterby2": {
+          "title": "filterby2",
+          "description": "description",
+          "type": "string",
+          "minLength": 1000,
+          "maxLength": 1000
+        },
+        "filterby3": {
+          "title": "filterby3",
+          "description": "description",
+          "type": "string",
+          "minLength": 1000,
+          "maxLength": 1000
+        },
+        "filterby4": {
+          "title": "filterby4",
+          "description": "description",
+          "type": "string",
+          "minLength": 1000,
+          "maxLength": 1000
+        },
+        "filterby5": {
+          "title": "filterby5",
+          "description": "description",
+          "type": "string",
+          "minLength": 1000,
+          "maxLength": 1000
+        },
+        "filterby6": {
+          "title": "filterby6",
+          "description": "description",
+          "type": "string",
+          "minLength": 1000,
+          "maxLength": 1000
+        },
+        "filterby7": {
+          "title": "filterby7",
+          "description": "description",
+          "type": "string",
+          "minLength": 1000,
+          "maxLength": 1000
+        },
+        "filterby8": {
+          "title": "filterby8",
+          "description": "description",
+          "type": "string",
+          "minLength": 1000,
+          "maxLength": 1000
+        },
+        "filterby9": {
+          "title": "filterby9",
+          "description": "description",
+          "type": "string",
+          "minLength": 1000,
+          "maxLength": 1000
+        }
+      },
+      "propertyOrder": []
+    }
+  },
+  "propertyOrder": [],
+  "trait:filterable": {
+    "sortBy": [
+      {
+        "key": "default",
+        "paths": [
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/sortby1",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/sortby2",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/sortby3",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/sortby4",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/sortby5"
+        ]
+      },
+      {
+        "key": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "paths": [
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/sortby2",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/sortby3",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/sortby4",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/sortby5",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/sortby1"
+        ]
+      },
+      {
+        "key": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+        "paths": [
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/sortby3",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/sortby4",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/sortby5",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/sortby1",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/sortby2"
+        ]
+      },
+      {
+        "key": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+        "paths": [
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/sortby4",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/sortby5",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/sortby1",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/sortby2",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/sortby3"
+        ]
+      },
+      {
+        "key": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+        "paths": [
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/sortby5",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/sortby1",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/sortby2",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/sortby3",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/sortby4"
+        ]
+      }
+    ],
+    "filterBy": [
+      {
+        "paths": [
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/filterby1",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/filterby2",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/filterby3",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/filterby4",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/filterby5"
+        ]
+      },
+      {
+        "paths": [
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/filterby1",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/filterby2",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/filterby3",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/filterby4",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/filterby6"
+        ]
+      },
+      {
+        "paths": [
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/filterby1",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/filterby2",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/filterby3",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/filterby4",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/filterby7"
+        ]
+      },
+      {
+        "paths": [
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/filterby1",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/filterby2",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/filterby3",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/filterby4",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/filterby8"
+        ]
+      },
+      {
+        "paths": [
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/filterby1",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/filterby2",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/filterby3",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/filterby4",
+          "/LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER_LONG_JSON_POINTER/filterby9"
+        ]
+      }
+    ]
+  }
+}

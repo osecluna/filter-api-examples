@@ -1,0 +1,31 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://example.com/localization-test.json",
+
+	"title": "Title",
+	"description": "Description",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	
+	"type": "object",
+	"properties": {
+		"propertyName1": {
+			"title": "title",
+			"description": "description",
+			"allOf": [
+				{
+					"$ref": "http://bigcontent.io/cms/schema/v1/localization#/definitions/localized-string"
+				}
+			],
+			"ui:extension": {
+				"name": "localization"
+			}
+		}
+		
+	},
+	"propertyOrder": []
+}

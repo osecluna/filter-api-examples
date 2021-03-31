@@ -1,0 +1,29 @@
+{
+  "id": "a3bc14cc-50ec-462e-8392-2c1542c8609e",
+  "contentRepositoryId": "5d4af2ccc9e77c00015fa183",
+  "folderId": "604a3f934cedfd0001f412ee",
+  "body": {
+    "_meta": {
+      "name": "Olly's Blog",
+      "schema": "https://schema-examples.com/blog-hierarchy",
+      "deliveryKey": "blog",
+      "hierarchy": {
+        "root": true
+      }
+    },
+    "title": "Olly's Blog"
+  },
+  "version": 1,
+  "label": "Olly's Blog",
+  "status": "ACTIVE",
+  "createdBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "createdDate": "2021-03-11T18:15:37.657Z",
+  "lastModifiedBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "lastModifiedDate": "2021-03-11T18:15:37.657Z",
+  "lastPublishedVersion": 1,
+  "lastPublishedDate": "2021-03-16T16:04:30.360Z",
+  "hierarchy": {
+    "root": true
+  },
+  "deliveryId": "a3bc14cc-50ec-462e-8392-2c1542c8609e"
+}

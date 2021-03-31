@@ -1,0 +1,134 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://schema.example.com/contentassetlocalized.json",
+
+	"title": "Localized content asset",
+	"description": "Content asset with localized fields and body",
+
+	"allOf": [{
+		"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+	}],
+
+	"type": "object",
+	"properties": {
+		"content-asset-id": {
+			"type": "string",
+			"format": "symbol",
+			"title": "Content Asset ID",
+			"minLength": 1,
+			"maxLength": 256
+		},
+		"content-asset-name": {
+			"allOf": [{
+				"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+			}],
+			"properties": {
+				"values": {
+					"items": {
+						"properties": {
+							"value": {
+								"title": "Content Asset Name",
+								"type": "string",
+								"format": "text",
+								"minLength": 1,
+								"maxLength": 256
+							}
+						}
+					}
+				}
+			}
+		},
+		"page-url": {
+			"allOf": [{
+				"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+			}],
+			"properties": {
+				"values": {
+					"items": {
+						"properties": {
+							"value": {
+								"type": "string",
+								"title": "Page URL",
+								"minLength": 1,
+								"maxLength": 256
+							}
+						}
+					}
+				}
+			}
+		},
+		"title": {
+			"allOf": [{
+				"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+			}],
+			"properties": {
+				"values": {
+					"items": {
+						"properties": {
+							"value": {
+								"type": "string",
+								"format": "text",
+								"minLength": 0,
+								"maxLength": 255,
+								"title": "Title"
+							}
+						}
+					}
+				}
+			}
+		},
+		"library-folder": {
+			"type": "string",
+			"title": "Default Folder",
+			"minLength": 1,
+			"maxLength": 256
+		},
+		"content-asset-body": {
+			"allOf": [{
+					"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+				},
+				{
+					"properties": {
+						"values": {
+							"items": {
+								"properties": {
+									"value": {
+										"title": "Localized Content",
+										"type": "object",
+										"allOf": [{
+												"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+											},
+											{
+												"properties": {
+													"contentType": {
+														"title": "Content",
+														"enum": [
+															"https://schema.localhost.com/text.json",
+															"https://schema.localhost.com/image.json",
+															"https://schema.localhost.com/video.json"
+														]
+													}
+												}
+											}
+										]
+									}
+								}
+							}
+						}
+					}
+				}
+			]
+		}
+	},
+	"propertyOrder": [
+		"content-asset-id",
+		"content-asset-name",
+		"page-url",
+		"title",
+		"library-folder",
+		"content-asset-body"
+	],
+	"required": [
+		"content-asset-id"
+	]
+}

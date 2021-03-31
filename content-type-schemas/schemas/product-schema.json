@@ -1,0 +1,72 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://ampproduct.example.com/product.json",
+
+	"title": "Product",
+	"description": "Description",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	
+	"type": "object",
+	"properties": {
+		"sku": {
+			"title": "SKU",
+			"description": "Product identifier",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 15
+		},
+		"name": {
+			"title": "Name",
+			"description": "Product name",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 150
+		},
+		"price": {
+			"title": "Price",
+			"description": "description",
+			"type": "number",
+			"minimum": 0,
+			"maximum": 1000
+		},
+		"description1": {
+			"title": "Description 1",
+			"description": "Main description",
+			"type": "string",
+			"format": "markdown"
+		},
+		"description2": {
+			"title": "Description 2",
+			"description": "Secondary description",
+			"type": "string",
+			"format": "markdown"
+		},
+		"hierarchyNodes": {
+			"title": "Categories",
+			"type": "array",
+			"minItems": 0,
+			"maxItems": 10,
+			"items": {
+				"allOf": [
+					{ "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link" },
+					{
+						"properties": {
+							"contentType": {
+								"enum": [
+									"https://hierarchy-pdp.bigcontent.io/child-node.json"
+								]
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"propertyOrder": [],
+	"required":["sku"]
+}

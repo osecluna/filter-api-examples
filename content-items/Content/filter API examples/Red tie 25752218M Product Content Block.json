@@ -1,0 +1,36 @@
+{
+  "id": "f6b3bc35-f465-4bc6-9dd3-9ef233bbbd2c",
+  "contentRepositoryId": "5d4af2ccc9e77c00015fa183",
+  "folderId": "605b533dc9e77c00012aa5d0",
+  "body": {
+    "_meta": {
+      "name": "Red tie 25752218MProduct Content Block",
+      "schema": "https://shema-examples.com/pdp-content-block"
+    },
+    "hidden": false,
+    "content": [
+      {
+        "_meta": {
+          "name": "Redd tie 25752218MImage dc-static-blog-nextjs",
+          "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+        },
+        "id": "dc7912fb-4085-43eb-b273-45e21dc49716",
+        "contentType": "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/image.json"
+      }
+    ],
+    "sku": "25752218M",
+    "categoryId": "mens-accessories-ties",
+    "productFamily": "Silk",
+    "priority": 5
+  },
+  "version": 3,
+  "label": "Red tie 25752218M Product Content Block",
+  "status": "ACTIVE",
+  "createdBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "createdDate": "2021-03-24T17:04:12.081Z",
+  "lastModifiedBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "lastModifiedDate": "2021-03-25T11:14:50.171Z",
+  "lastPublishedVersion": 3,
+  "lastPublishedDate": "2021-03-25T11:15:17.556Z",
+  "deliveryId": "f6b3bc35-f465-4bc6-9dd3-9ef233bbbd2c"
+}

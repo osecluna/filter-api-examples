@@ -1,0 +1,95 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://shema-examples.com/pdp-content-block",
+
+	"title": "Title",
+	"description": "Description",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	
+	"type": "object",
+	"properties": {
+		"sku": {
+			"title": "Product SKU",
+			"description": "enter the exact product sku of the product where you want this to display",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 20
+		},
+		"categoryId": {
+			"title": "Category ID",
+			"description": "Enter the ID of a product category",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 100
+		},
+		"productFamily": {
+			"title": "Product Family",
+			"description": "Enter the name of a product category",
+			"type": "string",
+			"nullable": true,
+			"minLength": 0,
+			"maxLength": 100
+		},
+		"priority": {
+			"title": "Priority",
+			"description": "Rank the importance of this content",
+			"type": "number",
+			"minimum": 0,
+			"maximum": 10
+		},
+		"hidden": {
+			"title": "Hidden",
+			"description": "Check to hide this content",
+			"type": "boolean"
+		},
+		"content": {
+            "title": "PDP Content",
+            "description": "",
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 20,
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                    },
+                    {
+                        "properties": {
+                            "contentType": {
+                                "title": "Content",
+                                "enum": [
+                                    "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/image.json",
+                                    "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/video.json",
+                                    "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/text.json"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+	},
+	"propertyOrder": [],
+	"trait:filterable": {
+		"filterBy": [
+		{ "paths": ["/sku",
+                    "/_meta/schema"] },
+		{ "paths": ["/categoryId",
+                    "/_meta/schema"] },
+		{ "paths": ["/productFamily",
+                    "/_meta/schema"] },
+		{ "paths": ["/hidden",
+                    "/_meta/schema"] }
+		]
+	},
+	"trait:sortable": {
+		"sortBy": [
+			{ "key": "default", "paths": ["/priority"] }
+		]
+	}
+}

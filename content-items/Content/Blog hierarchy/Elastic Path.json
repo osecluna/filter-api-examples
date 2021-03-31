@@ -1,0 +1,50 @@
+{
+  "id": "6518f58e-ddc9-477a-bbdc-c74a98bd78c7",
+  "contentRepositoryId": "5d4af2ccc9e77c00015fa183",
+  "folderId": "604a3f934cedfd0001f412ee",
+  "body": {
+    "_meta": {
+      "name": "Elastic Path",
+      "schema": "https://schema-examples.com/blogpost-hierarchy-node",
+      "hierarchy": {
+        "parentId": "3bf04259-84d3-44a2-9c80-ce1b07085f59",
+        "root": false
+      }
+    },
+    "image": {
+      "_meta": {
+        "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+      },
+      "contentType": "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/image.json",
+      "id": "cb2fba5c-0ddd-4f1d-8963-4ddafbfb259a"
+    },
+    "content": [
+      {
+        "_meta": {
+          "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+        },
+        "contentType": "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/text.json",
+        "id": "5cf5df1f-ce1b-4355-9c2b-df590cd6196d"
+      }
+    ],
+    "title": "ELASTIC PATH'S NEW COMPOSABLE COMMERCE HUB",
+    "description": "ELASTIC PATH'S NEW COMPOSABLE COMMERCE HUB ACTIVATES COMPOSABLE COMMERCE MOVEMENT",
+    "date": "2021-03-18",
+    "ranking": 4,
+    "readTime": 2
+  },
+  "version": 1,
+  "label": "Elastic Path",
+  "status": "ACTIVE",
+  "createdBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "createdDate": "2021-03-17T17:12:59.674Z",
+  "lastModifiedBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "lastModifiedDate": "2021-03-17T17:12:59.674Z",
+  "lastPublishedVersion": 1,
+  "lastPublishedDate": "2021-03-17T17:13:45.023Z",
+  "hierarchy": {
+    "parentId": "3bf04259-84d3-44a2-9c80-ce1b07085f59",
+    "root": false
+  },
+  "deliveryId": "6518f58e-ddc9-477a-bbdc-c74a98bd78c7"
+}

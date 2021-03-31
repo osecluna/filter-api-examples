@@ -1,0 +1,31 @@
+{
+  "id": "26c853d3-ce8e-4953-895e-e333c4c9b330",
+  "contentRepositoryId": "5d4af2ccc9e77c00015fa183",
+  "folderId": null,
+  "body": {
+    "_meta": {
+      "name": "Cobalti tie 25752218M Image dc-static-blog-nextjs",
+      "schema": "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/image.json"
+    },
+    "image": {
+      "_meta": {
+        "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+      },
+      "id": "e73666d7-b356-4837-993b-c9cb9618597b",
+      "name": "25752235M_COBATSI_PZ",
+      "endpoint": "bloblogltd",
+      "defaultHost": "cdn.media.amplience-qa.net"
+    },
+    "altText": "Cobalt tie"
+  },
+  "version": 1,
+  "label": "Cobalti tie 25752218M Image dc-static-blog-nextjs",
+  "status": "ACTIVE",
+  "createdBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "createdDate": "2021-03-24T17:07:26.668Z",
+  "lastModifiedBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "lastModifiedDate": "2021-03-24T17:07:26.668Z",
+  "lastPublishedVersion": 1,
+  "lastPublishedDate": "2021-03-30T12:34:27.276Z",
+  "deliveryId": "26c853d3-ce8e-4953-895e-e333c4c9b330"
+}

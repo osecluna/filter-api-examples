@@ -1,0 +1,5 @@
+{
+  "body": "./schemas/pdp-content-block-schema.json",
+  "schemaId": "https://ampproduct.example.com/pdp-content-block.json",
+  "validationLevel": "CONTENT_TYPE"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "676342b6-8890-4a95-9823-1f1a739d465e",
+  "contentRepositoryId": "5d4af2ccc9e77c00015fa183",
+  "folderId": "605b533dc9e77c00012aa5d0",
+  "body": {
+    "_meta": {
+      "name": "Filter API Blog post",
+      "schema": "https://schema-examples.com/blogpost-filter-and-sort",
+      "deliveryKey": "hierarchies"
+    },
+    "authors": [
+      {
+        "_meta": {
+          "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+        },
+        "contentType": "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/author.json",
+        "id": "cdc5b2da-2ce0-4fa7-8c01-0be18f61e81a"
+      }
+    ],
+    "image": {
+      "_meta": {
+        "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+      },
+      "contentType": "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/image.json",
+      "id": "ccb69eeb-ece7-498c-8ba8-8a461363ea02"
+    },
+    "content": [
+      {
+        "_meta": {
+          "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+        },
+        "contentType": "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/text.json",
+        "id": "1938eeb9-efc8-44fb-a2c6-413bf172c35a"
+      }
+    ],
+    "title": "My hierarchies is a tree of taxonomies",
+    "category": "Women",
+    "date": "2020-03-17",
+    "ranking": 5,
+    "description": "Create a hierarchy of with our new traits",
+    "readTime": 8
+  },
+  "version": 2,
+  "label": "Hierarchies Blog post",
+  "status": "ACTIVE",
+  "createdBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "createdDate": "2021-03-17T13:59:57.213Z",
+  "lastModifiedBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "lastModifiedDate": "2021-03-24T14:57:25.373Z",
+  "lastPublishedVersion": 2,
+  "lastPublishedDate": "2021-03-29T14:24:27.961Z",
+  "deliveryId": "676342b6-8890-4a95-9823-1f1a739d465e"
+}

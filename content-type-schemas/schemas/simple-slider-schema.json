@@ -1,0 +1,59 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://schema-examples.com/simple-slider",
+    "title": "Media content item",
+    "description": "Content with integrated slider",
+    "$comment": "Docs: https://amplience.com/docs/development/schema-examples/coreconcepts/media.html",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "type": "object",
+    "properties": {
+        "transitiontime": {
+            "title": "Transition time",
+            "description": "Choose the transition time in seconds",
+            "type": "number",
+            "ui:extension": {
+				"name": "simple-slider",
+				"params": {
+					"min": 0,
+					"max": 10,
+					"value": 5
+				}
+			},
+            "minimum": 0,
+            "maximum": 20
+        },
+         "brandcolours": {
+            "title": "Brand Colours",
+            "description": "Choose your brand colours",
+            "type": "string",
+            "ui:extension": {
+				"name": "brand-colours",
+				"params": {
+					"title": "title",
+					"account": "dummy",
+					"contentID": "0cc2b50a-72b0-460d-ba6b-3b9698b880af"
+				}
+			}
+        },
+        "image": {
+            "title": "Image",
+            "allOf": [
+                {
+                    "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+                }
+            ]
+        },
+        "altimagetext": {
+            "title": "Alt image text",
+            "description": "The text to be displayed if the image cannot be displayed",
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 100
+        }
+    },
+    "propertyOrder": []
+}

@@ -1,0 +1,41 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://schema.localhost.com/map.json",
+
+	"title": "Title",
+	"description": "Description",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	
+	"type": "object",
+	"properties": {
+  "location": {
+      "title": "Location",
+      "description": "Place location latitude and longitude",
+      "type": "object",
+      "properties": {
+        "lat": {
+          "title": "Latitude",
+          "type": "number"
+        },
+        "lng": {
+          "title": "Longitude",
+          "type": "number"
+        }
+      },
+      "ui:extension": {
+        "url": "https://map-ui.extensions.content.amplience-qa.net",
+        "params": {
+          "apiKey": "{{apiKey}}",
+          "theme": "Light",
+          "searchPlaceholderText": "Search for places ..."
+        }
+      }
+    }
+  },
+	"propertyOrder": []
+}

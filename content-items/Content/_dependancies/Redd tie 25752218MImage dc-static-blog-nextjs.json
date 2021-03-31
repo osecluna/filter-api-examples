@@ -1,0 +1,31 @@
+{
+  "id": "dc7912fb-4085-43eb-b273-45e21dc49716",
+  "contentRepositoryId": "5d4af2ccc9e77c00015fa183",
+  "folderId": null,
+  "body": {
+    "_meta": {
+      "name": "Redd tie 25752218MImage dc-static-blog-nextjs",
+      "schema": "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/image.json"
+    },
+    "image": {
+      "_meta": {
+        "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+      },
+      "id": "56cdf7d3-85b0-4e9e-846c-e3806fa63dc2",
+      "name": "25752218M_REDSI_PZ",
+      "endpoint": "bloblogltd",
+      "defaultHost": "cdn.media.amplience-qa.net"
+    },
+    "altText": "Red tie"
+  },
+  "version": 1,
+  "label": "Redd tie 25752218MImage dc-static-blog-nextjs",
+  "status": "ACTIVE",
+  "createdBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "createdDate": "2021-03-24T17:04:05.846Z",
+  "lastModifiedBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "lastModifiedDate": "2021-03-24T17:04:05.846Z",
+  "lastPublishedVersion": 1,
+  "lastPublishedDate": "2021-03-25T11:15:17.556Z",
+  "deliveryId": "dc7912fb-4085-43eb-b273-45e21dc49716"
+}

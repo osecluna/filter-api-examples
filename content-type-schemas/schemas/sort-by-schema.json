@@ -1,0 +1,78 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://example.com/trait/sort-by",
+
+	"title": "Trait - sort by example",
+	"description": "Description",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	
+	"type": "object",
+	"properties": {
+		"propertyName1": {
+			"title": "title",
+			"description": "description",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 10
+		},
+		"propertyName2": {
+			"title": "title",
+			"description": "description",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 10
+		},
+		"propertyName3": {
+			"title": "title",
+			"description": "description",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 10
+		},
+		"propertyName4": {
+			"title": "title",
+			"description": "description",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 10
+		},
+		"propertyName5": {
+			"title": "title",
+			"description": "description",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 10
+		}
+	},
+	"propertyOrder": [],
+	"trait:sortable": {
+		"sortBy": [
+			{
+				"key": "default",
+				"paths": ["/propertyName1",  "/propertyName2", "/propertyName3", "/propertyName4", "/propertyName5"]
+			},
+			{
+				"key": "propertyName1",
+				"paths": ["/propertyName1"]
+			},
+			{
+				"key": "propertyName2_1",
+				"paths": ["/propertyName2", "/propertyName1"]
+			},
+			{
+				"key": "propertyName3_2_1",
+				"paths": ["/propertyName3", "/propertyName2", "/propertyName1"]
+			},
+			{
+				"key": "propertyName4_3_2_1",
+				"paths": ["/propertyName4","/propertyName3", "/propertyName2", "/propertyName1"]
+			}
+		]
+  }
+}
+	

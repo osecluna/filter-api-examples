@@ -1,0 +1,31 @@
+{
+  "id": "ccb69eeb-ece7-498c-8ba8-8a461363ea02",
+  "contentRepositoryId": "5d4af2ccc9e77c00015fa183",
+  "folderId": null,
+  "body": {
+    "_meta": {
+      "name": "Blog Muhammed Ali image",
+      "schema": "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/image.json"
+    },
+    "image": {
+      "_meta": {
+        "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+      },
+      "id": "e57c68d1-36c0-4a00-934f-f8a62378ae08",
+      "name": "ALIDAYS1_1",
+      "endpoint": "bloblogltd",
+      "defaultHost": "cdn.media.amplience-qa.net"
+    },
+    "altText": "Muhammed Ali"
+  },
+  "version": 1,
+  "label": "Blog Muhammed Ali image",
+  "status": "ACTIVE",
+  "createdBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "createdDate": "2021-03-09T10:11:32.788Z",
+  "lastModifiedBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "lastModifiedDate": "2021-03-09T10:11:32.788Z",
+  "lastPublishedVersion": 1,
+  "lastPublishedDate": "2021-03-30T12:39:48.065Z",
+  "deliveryId": "ccb69eeb-ece7-498c-8ba8-8a461363ea02"
+}

@@ -1,0 +1,34 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://example.com/simple-slider",
+
+	"title": "Title",
+	"description": "Description",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	
+	"type": "object",
+	"properties": {
+		"slidervalue": {
+			"title": "transitiontime",
+			"description": "Choose the transition time in seconds",
+			"type": "number",
+			"ui:extension": {
+				"name": "simple-slider",
+				"params": {
+					"min": 0,
+					"max": 10,
+					"value": 5
+				}
+			},
+			"minimum": 0,
+			"maximum": 10
+		}
+		
+	},
+	"propertyOrder": []
+}

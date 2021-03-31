@@ -1,0 +1,10 @@
+{
+  "contentTypeUri": "https://shema-examples.com/pdp-content-block",
+  "status": "ACTIVE",
+  "settings": {
+    "label": "Product Content Block",
+    "icons": [],
+    "visualizations": [],
+    "cards": []
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "cb2fba5c-0ddd-4f1d-8963-4ddafbfb259a",
+  "contentRepositoryId": "5d4af2ccc9e77c00015fa183",
+  "folderId": null,
+  "body": {
+    "_meta": {
+      "name": "Green jumper Image",
+      "schema": "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/image.json"
+    },
+    "image": {
+      "_meta": {
+        "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+      },
+      "id": "374c9eb2-4b03-4d5b-85fb-01b0d8440b5b",
+      "name": "woman-green-sweater",
+      "endpoint": "bloblogltd",
+      "defaultHost": "cdn.media.amplience-qa.net"
+    },
+    "altText": "Green jumper"
+  },
+  "version": 1,
+  "label": "Green jumper Image",
+  "status": "ACTIVE",
+  "createdBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "createdDate": "2021-03-09T10:17:40.250Z",
+  "lastModifiedBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "lastModifiedDate": "2021-03-09T10:17:40.250Z",
+  "lastPublishedVersion": 1,
+  "lastPublishedDate": "2021-03-30T12:39:48.065Z",
+  "deliveryId": "cb2fba5c-0ddd-4f1d-8963-4ddafbfb259a"
+}

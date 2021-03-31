@@ -1,0 +1,32 @@
+{
+  "id": "3bf04259-84d3-44a2-9c80-ce1b07085f59",
+  "contentRepositoryId": "5d4af2ccc9e77c00015fa183",
+  "folderId": "604a3f934cedfd0001f412ee",
+  "body": {
+    "_meta": {
+      "name": "Commerce",
+      "schema": "https://schema-examples.com/blog-hierarchy",
+      "deliveryKey": "commerce",
+      "hierarchy": {
+        "parentId": "a3bc14cc-50ec-462e-8392-2c1542c8609e",
+        "root": false
+      }
+    },
+    "title": "Commerce",
+    "ranking": 3
+  },
+  "version": 2,
+  "label": "Commerce",
+  "status": "ACTIVE",
+  "createdBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "createdDate": "2021-03-16T14:46:33.727Z",
+  "lastModifiedBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "lastModifiedDate": "2021-03-16T16:04:06.362Z",
+  "lastPublishedVersion": 2,
+  "lastPublishedDate": "2021-03-16T16:05:28.858Z",
+  "hierarchy": {
+    "parentId": "a3bc14cc-50ec-462e-8392-2c1542c8609e",
+    "root": false
+  },
+  "deliveryId": "3bf04259-84d3-44a2-9c80-ce1b07085f59"
+}

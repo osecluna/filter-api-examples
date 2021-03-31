@@ -1,0 +1,29 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://example.com/using-brand-colours.json",
+
+	"title": "Title",
+	"description": "Description",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	
+	"type": "object",
+	"properties": {
+		"headingColour": {
+  "type": "string",
+  "ui:extension": {
+    "name": "brand-colours",
+    "params": {
+      "title": "Heading Colour",
+      "contentID": "c4b0b1cf-884e-4c66-b2aa-266686fecafa"
+    }
+  }
+}
+		
+	},
+	"propertyOrder": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": "ed1b3371-9c5a-4763-9385-ea73370df621",
+  "contentRepositoryId": "5d4af2ccc9e77c00015fa183",
+  "folderId": null,
+  "body": {
+    "_meta": {
+      "name": "Charcoal suit 25686571M Image dc-static-blog-nextjs",
+      "schema": "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/image.json"
+    },
+    "image": {
+      "_meta": {
+        "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+      },
+      "id": "c51a3b67-af09-4300-bc4b-0ffed275529f",
+      "name": "25686571M_CHARCWL_PZ",
+      "endpoint": "bloblogltd",
+      "defaultHost": "cdn.media.amplience-qa.net"
+    },
+    "altText": "Charcoal suit"
+  },
+  "version": 1,
+  "label": "Charcoal suit 25686571M Image dc-static-blog-nextjs",
+  "status": "ACTIVE",
+  "createdBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "createdDate": "2021-03-24T16:56:31.495Z",
+  "lastModifiedBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "lastModifiedDate": "2021-03-25T11:16:32.950Z",
+  "lastPublishedVersion": 1,
+  "lastPublishedDate": "2021-03-30T11:22:54.431Z",
+  "deliveryId": "ed1b3371-9c5a-4763-9385-ea73370df621"
+}

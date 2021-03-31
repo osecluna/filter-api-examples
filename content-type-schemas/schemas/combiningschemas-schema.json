@@ -1,0 +1,65 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://schema-examples.com/combiningschemas",
+    "title": "Title",
+    "description": "Example showing how to combine content types. Prerequisites: 'https://schema-examples.com/media' must also be registered",
+    "$comment": "Docs: https://amplience.com/docs/development/schema-examples/coreconcepts/combiningschemas.html",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "type": "object",
+    "properties": {
+        "content_Link": {
+            "title": "Media content item linked",
+            "allOf": [
+                {
+                    "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                },
+                {
+                    "properties": {
+                        "contentType": {
+                            "enum": [
+                                "https://schema-examples.com/media"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "content_Reference": {
+            "title": "Media content item referenced",
+            "allOf": [
+                {
+                    "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-reference"
+                },
+                {
+                    "properties": {
+                        "contentType": {
+                            "enum": [
+                                "https://schema-examples.com/media"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "inline_Content": {
+            "type": "object",
+            "allOf": [
+                {
+                    "$ref": "https://schema-examples.com/media"
+                }
+            ]
+        },
+        "link_from_partial": {
+            "allOf": [
+                {
+                    "$ref": "https://schema-examples.com/various-partials#/definitions/link"
+                }
+            ]
+        }
+    },
+    "propertyOrder": []
+}

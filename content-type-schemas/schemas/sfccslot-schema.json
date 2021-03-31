@@ -1,0 +1,62 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "http://schema.example.com/sfccslot.json",
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	"title": "SFCC Slot",
+	"description": "SFCC Slot with site ID",
+	"type": "object",
+	"properties": {
+		"_environment": {
+			"type": "object",
+			"properties": {
+				"sfcc_slot": {
+					"$ref": "https://raw.githubusercontent.com/amplience/dc-integrations-sfcc/master/content-types/sfcc/sfcc.json#/definitions/sfcc_slot"
+				},
+				"sfcc_category_slot": {
+					"$ref": "https://raw.githubusercontent.com/amplience/dc-integrations-sfcc/master/content-types/sfcc/sfcc.json#/definitions/sfcc_category_slot"
+				},
+				"sfcc_folder_slot": {
+					"$ref": "https://raw.githubusercontent.com/amplience/dc-integrations-sfcc/master/content-types/sfcc/sfcc.json#/definitions/sfcc_folder_slot"
+				},
+				"sfcc_site": {
+					"allOf": [{
+							"$ref": "https://raw.githubusercontent.com/amplience/dc-integrations-sfcc/master/content-types/sfcc/sfcc.json#/definitions/sfcc_site"
+						},
+						{
+							"properties": {
+								"site_id": {
+									"enum": [
+										"RefArch",
+										"RefArchGlobal"
+									]
+								}
+							}
+						}
+					]
+				}
+			}
+		},
+		"content": {
+			"allOf": [{
+					"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+				},
+				{
+					"properties": {
+						"contentType": {
+							"title": "Slot Content",
+							"enum": [
+								"https://schema.localhost.com/text.json",
+								"https://schema.localhost.com/image.json",
+								"https://schema.localhost.com/video.json"
+							]
+						}
+					}
+				}
+			]
+		}
+	}
+}

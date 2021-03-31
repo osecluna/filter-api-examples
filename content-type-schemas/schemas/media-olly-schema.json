@@ -1,0 +1,46 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://schema-examples.com/media-olly",
+    "title": "Media content item",
+    "description": "How to include images and video in your content",
+    "$comment": "Docs: https://amplience.com/docs/development/schema-examples/coreconcepts/media.html",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "type": "object",
+    "properties": {
+        "image": {
+            "title": "Image",
+            "allOf": [
+                {
+                    "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+                }
+            ]
+        },
+        "altimagetext": {
+            "title": "Alt image text",
+            "description": "The text to be displayed if the image cannot be displayed",
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 100
+        },
+        "video": {
+            "title": "video",
+            "allOf": [
+                {
+                    "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/video-link"
+                }
+            ]
+        },
+        "videotitle": {
+            "title": "Video title",
+            "description": "Enter the title for the video",
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 50
+        }
+    },
+    "propertyOrder": []
+}

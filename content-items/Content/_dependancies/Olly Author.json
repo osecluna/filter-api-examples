@@ -1,0 +1,30 @@
+{
+  "id": "cdc5b2da-2ce0-4fa7-8c01-0be18f61e81a",
+  "contentRepositoryId": "5d4af2ccc9e77c00015fa183",
+  "folderId": null,
+  "body": {
+    "_meta": {
+      "name": "Olly Author",
+      "schema": "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/author.json"
+    },
+    "avatar": {
+      "_meta": {
+        "name": "Green jumper Image",
+        "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+      },
+      "id": "cb2fba5c-0ddd-4f1d-8963-4ddafbfb259a",
+      "contentType": "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/image.json"
+    },
+    "name": "Olly"
+  },
+  "version": 1,
+  "label": "Olly Author",
+  "status": "ACTIVE",
+  "createdBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "createdDate": "2021-03-09T10:19:15.339Z",
+  "lastModifiedBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "lastModifiedDate": "2021-03-09T10:19:15.339Z",
+  "lastPublishedVersion": 1,
+  "lastPublishedDate": "2021-03-30T12:39:48.065Z",
+  "deliveryId": "cdc5b2da-2ce0-4fa7-8c01-0be18f61e81a"
+}

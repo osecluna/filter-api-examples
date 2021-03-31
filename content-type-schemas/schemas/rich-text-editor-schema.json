@@ -1,0 +1,28 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://example.com/rich-text-editor.json",
+	"title": "Title",
+	"description": "Description",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	
+	"type": "object",
+	"properties": {
+		"text": {
+			"title": "a title",
+			"description": "description",
+			"type": "string",
+			"minLength": 1,
+			"maxLength": 1000,
+			"ui:extension": {
+        "name": "rich-text-editor"
+    }
+		}
+		
+	},
+	"propertyOrder": []
+}

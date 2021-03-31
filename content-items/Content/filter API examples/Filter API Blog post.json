@@ -1,0 +1,53 @@
+{
+  "id": "731dc7ef-3cc4-40b8-8430-1ac522290984",
+  "contentRepositoryId": "5d4af2ccc9e77c00015fa183",
+  "folderId": "605b533dc9e77c00012aa5d0",
+  "body": {
+    "_meta": {
+      "name": "Filter API Blog post",
+      "schema": "https://schema-examples.com/blogpost-filter-and-sort",
+      "deliveryKey": "filterAPI"
+    },
+    "authors": [
+      {
+        "_meta": {
+          "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+        },
+        "contentType": "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/author.json",
+        "id": "cdc5b2da-2ce0-4fa7-8c01-0be18f61e81a"
+      }
+    ],
+    "image": {
+      "_meta": {
+        "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+      },
+      "contentType": "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/image.json",
+      "id": "ccb69eeb-ece7-498c-8ba8-8a461363ea02"
+    },
+    "content": [
+      {
+        "_meta": {
+          "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+        },
+        "contentType": "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/text.json",
+        "id": "1938eeb9-efc8-44fb-a2c6-413bf172c35a"
+      }
+    ],
+    "title": "New filter API!",
+    "category": "Women",
+    "date": "2020-03-09",
+    "ranking": 11,
+    "description": "Use the new filter API to list content items by trait",
+    "readTime": 21
+  },
+  "version": 19,
+  "label": "Filter API Blog post",
+  "status": "ACTIVE",
+  "createdBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "createdDate": "2021-03-09T16:46:11.896Z",
+  "lastModifiedBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "lastModifiedDate": "2021-03-30T12:38:53.366Z",
+  "lastPublishedVersion": 19,
+  "lastPublishedDate": "2021-03-30T12:39:48.065Z",
+  "deliveryId": "731dc7ef-3cc4-40b8-8430-1ac522290984"
+}

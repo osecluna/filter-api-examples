@@ -1,0 +1,22 @@
+{
+  "id": "1938eeb9-efc8-44fb-a2c6-413bf172c35a",
+  "contentRepositoryId": "5d4af2ccc9e77c00015fa183",
+  "folderId": null,
+  "body": {
+    "_meta": {
+      "name": "Filter API Text",
+      "schema": "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/text.json"
+    },
+    "text": "The filter API allows you to list content items by trait. The filterBy traits are defined in the schema."
+  },
+  "version": 1,
+  "label": "Filter API Text",
+  "status": "ACTIVE",
+  "createdBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "createdDate": "2021-03-09T10:08:31.762Z",
+  "lastModifiedBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "lastModifiedDate": "2021-03-09T10:08:31.762Z",
+  "lastPublishedVersion": 1,
+  "lastPublishedDate": "2021-03-30T12:39:48.065Z",
+  "deliveryId": "1938eeb9-efc8-44fb-a2c6-413bf172c35a"
+}

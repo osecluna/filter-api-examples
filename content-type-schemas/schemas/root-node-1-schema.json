@@ -1,0 +1,41 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://hierarchy-pdp.bigcontent.io/root-node.json",
+
+	"title": "Title",
+	"description": "Description",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		},
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v2/hierarchy#/definitions/hierarchy-node"
+		}
+	],
+
+	"trait:hierarchy": {
+		"childContentTypes": [
+			"https://hierarchy-pdp.bigcontent.io/child-node.json"
+		]
+	},
+	
+	"type": "object",
+	"properties": {
+		"title": {
+			"title": "Title",
+			"description": "title",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 100
+		},
+		"description": {
+			"title": "Description",
+			"description": "description",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 100
+		}	
+	},
+	"propertyOrder": []
+}

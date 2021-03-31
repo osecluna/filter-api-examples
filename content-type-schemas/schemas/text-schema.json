@@ -1,0 +1,43 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id": "https://schema.localhost.com/text.json",
+	"title": "Text",
+	"description": "Text schema",
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	"type": "object",
+	"properties": {
+		"text": {
+			"type": "string",
+			"format": "markdown",
+			"title": "Text",
+			"description": "",
+			"minLength": 1,
+			"maxLength": 30000,
+			"ui:extension": {
+            	"name": "test-samples"
+        	}
+		},
+		"propertyName1": {
+			"title": "title",
+			"description": "description",
+			"type": "string",
+			"ui:extension": {
+        "url": "https://amplience.github.io/dc-extension-rich-text/index.html",
+
+        "params": {
+            "language": "markdown"
+        }
+    }
+		}
+	},
+	"propertyOrder": [
+		"text"
+	],
+	"required": [
+		"text"
+	]
+}

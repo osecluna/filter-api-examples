@@ -1,0 +1,35 @@
+{
+  "id": "7a22508d-96a7-4a64-9efc-9047ae77862e",
+  "contentRepositoryId": "5d4af2ccc9e77c00015fa183",
+  "folderId": "605b533dc9e77c00012aa5d0",
+  "body": {
+    "_meta": {
+      "name": "Tie 25752218M Product Content Block",
+      "schema": "https://shema-examples.com/pdp-content-block"
+    },
+    "hidden": true,
+    "content": [
+      {
+        "_meta": {
+          "name": "Tie 25752218M Image dc-static-blog-nextjs",
+          "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+        },
+        "id": "8d1347b5-abad-473b-af3c-d57c93d1ac46",
+        "contentType": "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/image.json"
+      }
+    ],
+    "sku": "25752218M",
+    "categoryId": "mens-accessories-ties",
+    "priority": 3
+  },
+  "version": 4,
+  "label": "Yellow Tie 25752218M Product Content Block",
+  "status": "ACTIVE",
+  "createdBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "createdDate": "2021-03-24T17:05:00.344Z",
+  "lastModifiedBy": "7078e5e7-d5bf-4015-9add-b75fb6f60537",
+  "lastModifiedDate": "2021-03-30T09:23:58.254Z",
+  "lastPublishedVersion": 4,
+  "lastPublishedDate": "2021-03-30T11:22:48.977Z",
+  "deliveryId": "7a22508d-96a7-4a64-9efc-9047ae77862e"
+}

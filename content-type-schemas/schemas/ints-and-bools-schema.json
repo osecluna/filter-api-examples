@@ -1,0 +1,42 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "http://example.com/ints-and-bools.json",
+
+	"title": "Title",
+	"description": "Description",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	
+	"type": "object",
+	"properties": {
+		"constNumber": {
+			"title": "const number",
+			"description": "description",
+			"type": "number",
+			"const": 1
+		},"number": {
+			"title": "number",
+			"description": "description",
+			"type": "number",
+			"minimum": 0,
+			"maximum": 10
+		},
+		"constBoolean": {
+			"title": "boolean",
+			"description": "description",
+			"type": "boolean",
+			"const": true
+		},
+		"boolean": {
+			"title": "boolean",
+			"description": "description",
+			"type": "boolean"
+		}
+		
+	},
+	"propertyOrder": []
+}
