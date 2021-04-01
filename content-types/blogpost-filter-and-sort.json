@@ -1,0 +1,10 @@
+{
+  "contentTypeUri": "https://schema-examples.com/blogpost-filter-and-sort",
+  "status": "ACTIVE",
+  "settings": {
+    "label": "Blog post - filter and sort",
+    "icons": [],
+    "visualizations": [],
+    "cards": []
+  }
+}

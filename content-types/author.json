@@ -1,0 +1,10 @@
+{
+  "contentTypeUri": "https://schema-examples.com/author.json",
+  "status": "ACTIVE",
+  "settings": {
+    "label": "Author dc-static-blog-nextjs",
+    "icons": [],
+    "visualizations": [],
+    "cards": []
+  }
+}

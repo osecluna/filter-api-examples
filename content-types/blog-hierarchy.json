@@ -1,0 +1,10 @@
+{
+  "contentTypeUri": "https://schema-examples.com/blog-hierarchy",
+  "status": "ACTIVE",
+  "settings": {
+    "label": "Blog category",
+    "icons": [],
+    "visualizations": [],
+    "cards": []
+  }
+}

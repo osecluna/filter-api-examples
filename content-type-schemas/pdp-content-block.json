@@ -1,0 +1,5 @@
+{
+  "body": "./schemas/pdp-content-block-schema.json",
+  "schemaId": "https://schema-examples.com/pdp-content-block",
+  "validationLevel": "CONTENT_TYPE"
+}

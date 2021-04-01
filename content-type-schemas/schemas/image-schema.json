@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "https://schema-examples.com/image.json",
+  "title": "Image",
+  "description": "Image schema",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "image": {
+      "title": "Image",
+      "description": "insert an image",
+      "type": "object",
+      "anyOf": [
+        {
+          "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+        }
+      ]
+    },
+    "altText": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 150,
+      "title": "Alt text",
+      "description": "insert image alt text"
+    }
+  },
+  "propertyOrder": ["image", "altText"],
+  "required": ["image", "altText"]
+}

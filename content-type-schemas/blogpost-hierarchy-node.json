@@ -1,0 +1,5 @@
+{
+  "body": "./schemas/blogpost-hierarchy-node-schema.json",
+  "schemaId": "https://schema-examples.com/blogpost-hierarchy-node",
+  "validationLevel": "CONTENT_TYPE"
+}
