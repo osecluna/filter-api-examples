@@ -118,7 +118,7 @@ Substitute cursor value with nextCursor value returned in previous response
 		},
 		{
 			"path": "/categoryId",
-			"value": mens-clothing-suits
+			"value": "mens-clothing-suits"
 		}],
 	"sortBy": {"key": "priority", "order": "DESC"},
 	"page": {
