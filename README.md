@@ -72,7 +72,7 @@ Sort key 'title' is defined in the schema blog-hierarchy.json
 }
 ```
 
-#### Paging - custom size: List hierarchy child nodes, page size of 4 items
+#### Paging - custom size: List hierarchy child nodes, page size of 4
 
 ```
 {
@@ -80,9 +80,9 @@ Sort key 'title' is defined in the schema blog-hierarchy.json
 			"path": "/_meta/hierarchy/parentId",
 		  "value": "3bf04259-84d3-44a2-9c80-ce1b07085f59"
 	}],
-  "page": {
-    "size": 4
-  }
+  	"page": {
+    		"size": 4
+  	}
 }
 ```
 
@@ -96,18 +96,18 @@ Substitute cursor value with nextCursor value returned in previous response
 			"path": "/_meta/hierarchy/parentId",
 		  "value": "3bf04259-84d3-44a2-9c80-ce1b07085f59"
 	}],
-  "page": {
-    "size": 4,
+  	"page": {
+    		"size": 4,
 		"cursor": "eyJzb3J0S2V5IjoiXCIgNCIsIml0ZW1JZCI6ImJsb2Jsb2ctaHViLTAxOjQwMTAxNzdjLTFhZmMtNGM4ZC1iMTU5LWZlOGE4NWIyZjcwNyJ9"
-  }
+  	}
 }
 ```
 
-#### Boolean value: List PDP content blocks where hidden is false, sorted by priority
+#### Boolean value: List PDP content blocks where hidden is false and categoryId is mens-clothing-suits, sorted by priority, page size of 3
 
 ```
 {
-		"filterBy": [
+	"filterBy": [
 		{
 			"path": "/_meta/schema",
 			"value": "https://schema-examples.com/pdp-content-block"
@@ -115,7 +115,14 @@ Substitute cursor value with nextCursor value returned in previous response
 		{
 			"path": "/hidden",
 			"value": false
+		},
+		{
+			"path": "/categoryId",
+			"value": mens-clothing-suits
 		}],
-	"sortBy": {"key": "priority", "order": "DESC"}
+	"sortBy": {"key": "priority", "order": "DESC"},
+	"page": {
+    		"size": 3
+  	}
 }
 ```
