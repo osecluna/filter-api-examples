@@ -11,7 +11,8 @@ dc-cli content-type-schema import content-type-schemas
 dc-cli content-type import content-types
 
 ```
-### Example filter API requests
+
+### Example filter API requests
 
 All the below examples use the content delivery 2 endpoint ```/content/filter ```
 
