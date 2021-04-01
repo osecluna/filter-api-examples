@@ -10,9 +10,10 @@ dc-cli content-type-schema import content-type-schemas
 
 dc-cli content-type import content-types
 
-dc-cli content-item import content-items
 ```
 ### Example filter API requests
+
+All the below examples use the content delivery 2 endpoint ```/content/filter ```
 
 #### List by schemaId: List blog posts
 
