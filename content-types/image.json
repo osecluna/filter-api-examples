@@ -1,0 +1,10 @@
+{
+  "contentTypeUri": "https://schema-examples.com/image.json",
+  "status": "ACTIVE",
+  "settings": {
+    "label": "Image dc-static-blog-nextjs",
+    "icons": [],
+    "visualizations": [],
+    "cards": []
+  }
+}

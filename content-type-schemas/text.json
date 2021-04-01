@@ -1,0 +1,5 @@
+{
+  "body": "./schemas/text-schema.json",
+  "schemaId": "https://schema-examples.com/text.json",
+  "validationLevel": "CONTENT_TYPE"
+}

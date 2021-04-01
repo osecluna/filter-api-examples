@@ -1,0 +1,5 @@
+{
+  "body": "./schemas/blogpost-filter-and-sort-schema.json",
+  "schemaId": "https://schema-examples.com/blogpost-filter-and-sort",
+  "validationLevel": "CONTENT_TYPE"
+}

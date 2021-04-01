@@ -1,0 +1,10 @@
+{
+  "contentTypeUri": "https://schema-examples.com/text.json",
+  "status": "ACTIVE",
+  "settings": {
+    "label": "Text dc-static-blog-nextjs",
+    "icons": [],
+    "visualizations": [],
+    "cards": []
+  }
+}

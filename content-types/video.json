@@ -1,0 +1,10 @@
+{
+  "contentTypeUri": "https://schema-examples.com/video.json",
+  "status": "ACTIVE",
+  "settings": {
+    "label": "Video dc-static-blog-nextjs",
+    "icons": [],
+    "visualizations": [],
+    "cards": []
+  }
+}

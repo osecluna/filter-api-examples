@@ -1,0 +1,178 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://schema-examples.com/blogpost-filter-and-sort",
+    "title": "Blog post",
+    "description": "A blog post that can be filtered and sorted",
+    "$comment": "Docs: https://amplience.com/docs/development/schema-examples/blog/readme.html#blogpost",
+    "allOf": [
+		{ "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content" }
+	],
+    "type": "object",
+    "properties": {
+        "title": {
+            "title": "Title",
+            "description": "Used for heading and SEO title tag",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 150
+        },
+        "date": {
+            "title": "Creation date",
+            "description": "Creation date (YYYY-MM-DD)",
+            "type": "string",
+            "maxLength": 10,
+            "minLength": 10
+        },
+        "ranking": {
+            "title": "Ranking",
+            "description": "used for sorting blog posts",
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "description": {
+            "title": "Description",
+            "description": "Used for blog listing page and SEO description",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+        },
+        "image": {
+            "title": "Image",
+            "description": "Used for the blog post's thumbnail and banner",
+            "allOf": [
+                {
+                    "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                },
+                {
+                    "properties": {
+                        "contentType": {
+                            "enum": [
+                                "https://schema-examples.com/image.json"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "_meta":{
+            "type":"object",
+            "properties":{
+                "deliveryKey":{
+                "type":"string",
+                "title":"Delivery key",
+                "description": "The delivery key is used as the URL slug"
+                }
+            }
+        },
+        "readTime": {
+            "title": "Read time",
+            "description": "The time it takes to read the blog",
+            "type": "integer"
+        },
+        "authors": {
+            "title": "Blog author",
+            "description": "Article author(s) - max 3",
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 3,
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                    },
+                    {
+                        "properties": {
+                            "contentType": {
+                                "enum": [
+                                    "https://schema-examples.com/author.json"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "content": {
+            "title": "Content",
+            "description": "",
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 20,
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                    },
+                    {
+                        "properties": {
+                            "contentType": {
+                                "title": "Content",
+                                "enum": [
+                                    "https://schema-examples.com/image.json",
+                                    "https://schema-examples.com/video.json",
+                                    "https://schema-examples.com/text.json"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "category": {
+            "title": "Category",
+            "description": "description",
+            "type": "string",
+            "enum": [
+                "Women",
+                "Men",
+                "Kids",
+                "Beauty",
+                "Homewares"
+            ]
+        }
+    },
+    "propertyOrder": [
+        "title",
+        "_meta",
+        "authors",
+        "category",
+        "date",
+        "ranking",
+        "description",
+        "image",
+        "tags",
+        "readTime",
+        "content"
+    ],
+    "required": [
+        "title",
+        "authors",
+        "date",
+        "description",
+        "image",
+        "readTime",
+        "content"
+    ],
+	"trait:sortable": {
+		"sortBy": [
+			{
+				"key": "date",
+				"paths": ["/date",  "/ranking"]
+			},
+			{
+				"key": "readTime",
+				"paths": ["/readTime", "/date", "/ranking"]
+			}
+		]
+    },
+    "trait:filterable": {
+    "filterBy": [
+           {
+                "paths": [
+                    "/category"
+                ]
+            }
+    ]
+  }
+}
