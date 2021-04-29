@@ -77,19 +77,15 @@
 	"propertyOrder": [],
 	"trait:filterable": {
 		"filterBy": [
-		{ "paths": ["/sku",
-                    "/_meta/schema"] },
-		{ "paths": ["/categoryId",
-                    "/_meta/schema"] },
-		{ "paths": ["/productFamily",
-                    "/_meta/schema"] },
-		{ "paths": ["/hidden",
-                    "/_meta/schema"] }
+		{ "paths": ["/sku"] },
+		{ "paths": ["/categoryId"] },
+		{ "paths": ["/productFamily"] },
+		{ "paths": ["/hidden"] }
 		]
 	},
 	"trait:sortable": {
 		"sortBy": [
-			{ "key": "priority", "paths": ["/priority"] }
+			{ "key": "default", "paths": ["/priority"] }
 		]
 	}
 }

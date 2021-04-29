@@ -70,7 +70,7 @@
 	"trait:sortable": {
 		"sortBy": [
 			{
-				"key": "title",
+				"key": "default",
 				"paths": ["/title","/ranking"]
 			}
 		]
