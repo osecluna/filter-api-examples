@@ -35,7 +35,7 @@ All the below examples use the content delivery 2 endpoint ```/content/filter ``
 			"path": "/_meta/schema",
 			"value": "https://schema-examples.com/blogpost-filter-and-sort"
 		}],
-		"sortBy": {"key": "date", "order": "DESC"}
+		"sortBy": {"key": "default", "order": "DESC"}
 }
 ```
 
@@ -68,7 +68,7 @@ Sort key 'title' is defined in the schema blog-hierarchy.json
 		"path": "/_meta/hierarchy/parentId",
 		"value": "3bf04259-84d3-44a2-9c80-ce1b07085f59"
 	}],
-	"sortBy": {"key": "title", "order": "DESC"}
+	"sortBy": {"key": "default", "order": "DESC"}
 }
 ```
 
@@ -94,7 +94,7 @@ Substitute cursor value with nextCursor value returned in previous response
 {
 	"filterBy": [{
 			"path": "/_meta/hierarchy/parentId",
-		  "value": "3bf04259-84d3-44a2-9c80-ce1b07085f59"
+		  	"value": "3bf04259-84d3-44a2-9c80-ce1b07085f59"
 	}],
   	"page": {
     		"size": 4,
@@ -120,7 +120,7 @@ Substitute cursor value with nextCursor value returned in previous response
 			"path": "/categoryId",
 			"value": "mens-clothing-suits"
 		}],
-	"sortBy": {"key": "priority", "order": "DESC"},
+	"sortBy": {"key": "default", "order": "DESC"},
 	"page": {
     		"size": 3
   	}
