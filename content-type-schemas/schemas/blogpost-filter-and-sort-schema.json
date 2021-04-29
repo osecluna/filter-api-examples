@@ -157,7 +157,7 @@
 	"trait:sortable": {
 		"sortBy": [
 			{
-				"key": "date",
+				"key": "default",
 				"paths": ["/date",  "/ranking"]
 			},
 			{
