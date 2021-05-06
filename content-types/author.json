@@ -2,9 +2,10 @@
   "contentTypeUri": "https://schema-examples.com/author.json",
   "status": "ACTIVE",
   "settings": {
-    "label": "Author dc-static-blog-nextjs",
+    "label": "Author - filter-api",
     "icons": [],
     "visualizations": [],
     "cards": []
-  }
+  },
+  "repositories": ["content"]
 }

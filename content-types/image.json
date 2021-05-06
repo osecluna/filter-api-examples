@@ -2,9 +2,10 @@
   "contentTypeUri": "https://schema-examples.com/image.json",
   "status": "ACTIVE",
   "settings": {
-    "label": "Image dc-static-blog-nextjs",
+    "label": "Image - filter-api",
     "icons": [],
     "visualizations": [],
     "cards": []
-  }
+  },
+  "repositories": ["content"]
 }

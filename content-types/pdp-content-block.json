@@ -2,9 +2,10 @@
   "contentTypeUri": "https://schema-examples.com/pdp-content-block",
   "status": "ACTIVE",
   "settings": {
-    "label": "Product Content Block",
+    "label": "Product Content Block - filter-api",
     "icons": [],
     "visualizations": [],
     "cards": []
-  }
+  },
+  "repositories": ["content"]
 }

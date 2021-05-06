@@ -2,9 +2,10 @@
   "contentTypeUri": "https://schema-examples.com/video.json",
   "status": "ACTIVE",
   "settings": {
-    "label": "Video dc-static-blog-nextjs",
+    "label": "Video - filter-api",
     "icons": [],
     "visualizations": [],
     "cards": []
-  }
+  },
+  "repositories": ["content"]
 }
