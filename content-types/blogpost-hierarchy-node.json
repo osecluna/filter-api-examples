@@ -2,9 +2,10 @@
   "contentTypeUri": "https://schema-examples.com/blogpost-hierarchy-node",
   "status": "ACTIVE",
   "settings": {
-    "label": "Blog post as hierarchy node",
+    "label": "Blog post as hierarchy node - filter-api",
     "icons": [],
     "visualizations": [],
     "cards": []
-  }
+  },
+  "repositories": ["content"]
 }

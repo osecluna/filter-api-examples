@@ -2,9 +2,10 @@
   "contentTypeUri": "https://schema-examples.com/blogpost-filter-and-sort",
   "status": "ACTIVE",
   "settings": {
-    "label": "Blog post - filter and sort",
+    "label": "Blog post - filter-api",
     "icons": [],
     "visualizations": [],
     "cards": []
-  }
+  },
+  "repositories": ["content"]
 }

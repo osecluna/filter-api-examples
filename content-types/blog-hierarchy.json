@@ -2,9 +2,10 @@
   "contentTypeUri": "https://schema-examples.com/blog-hierarchy",
   "status": "ACTIVE",
   "settings": {
-    "label": "Blog category",
+    "label": "Blog category - filter-api",
     "icons": [],
     "visualizations": [],
     "cards": []
-  }
+  },
+  "repositories": ["content"]
 }
