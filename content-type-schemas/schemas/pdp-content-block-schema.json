@@ -77,9 +77,9 @@
 	"propertyOrder": [],
 	"trait:filterable": {
 		"filterBy": [
-		{ "paths": ["/sku"] },
-		{ "paths": ["/categoryId"] },
-		{ "paths": ["/productFamily"] },
+		{ "paths": ["/sku", "/hidden"] },
+		{ "paths": ["/categoryId", "/hidden"] },
+		{ "paths": ["/productFamily", "/hidden"] },
 		{ "paths": ["/hidden"] }
 		]
 	},

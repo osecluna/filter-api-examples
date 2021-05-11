@@ -77,8 +77,8 @@ Sort key 'title' is defined in the schema blog-hierarchy.json
 ```
 {
 	"filterBy": [{
-			"path": "/_meta/hierarchy/parentId",
-		  "value": "3bf04259-84d3-44a2-9c80-ce1b07085f59"
+		"path": "/_meta/hierarchy/parentId",
+		"value": "3bf04259-84d3-44a2-9c80-ce1b07085f59"
 	}],
   	"page": {
     		"size": 4
