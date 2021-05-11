@@ -41,9 +41,14 @@
 			"minLength": 0,
 			"maxLength": 100
 		},
+		"description": {
+			"title": "Description",
+			"description": "used for SEO met description",
+			"type": "string"
+		},
 		"ranking": {
 			"title": "Ranking",
-			"description": "description",
+			"description": "used for sorting",
 			"type": "number",
 			"minimum": 0,
 			"maximum": 100
@@ -52,16 +57,6 @@
 			"title": "Image",
 			"allOf": [
 				{ "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link" }
-			]
-		},
-		"propertyName1": {
-			"title": "title",
-			"description": "description",
-			"type": "string",
-			"enum": [
-				"Option One",
-				"Option Two",
-				"Option Three"
 			]
 		}
 	},
