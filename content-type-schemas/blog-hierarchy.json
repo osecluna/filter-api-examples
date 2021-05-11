@@ -1,5 +1,0 @@
-{
-  "body": "./schemas/blog-hierarchy-schema.json",
-  "schemaId": "https://schema-examples.com/blog-hierarchy",
-  "validationLevel": "CONTENT_TYPE"
-}

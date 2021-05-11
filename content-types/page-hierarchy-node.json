@@ -1,8 +1,8 @@
 {
-  "contentTypeUri": "https://schema-examples.com/blog-hierarchy",
+  "contentTypeUri": "https://schema-examples.com/page-hierarchy-node",
   "status": "ACTIVE",
   "settings": {
-    "label": "Blog category - filter-api",
+    "label": "Page as hierarchy node - filter-api",
     "icons": [],
     "visualizations": [],
     "cards": []

@@ -2,9 +2,10 @@
   "contentTypeUri": "https://schema-examples.com/text.json",
   "status": "ACTIVE",
   "settings": {
-    "label": "Text dc-static-blog-nextjs",
+    "label": "Text - filter-api",
     "icons": [],
     "visualizations": [],
     "cards": []
-  }
+  },
+  "repositories": ["content"]
 }
