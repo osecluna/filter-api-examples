@@ -1,0 +1,5 @@
+{
+  "body": "./schemas/page-hierarchy-schema.json",
+  "schemaId": "https://schema-examples.com/page-hierarchy",
+  "validationLevel": "CONTENT_TYPE"
+}

@@ -1,8 +1,8 @@
 {
 	"$schema": "http://bigcontent.io/cms/schema/v2/schema#",
-	"$id": "https://schema-examples.com/blogpost-hierarchy-node",
-	"title": "Blog post node",
-	"description": "Blog post as a hierarchy node",
+	"$id": "https://schema-examples.com/page-hierarchy-node",
+	"title": "Page",
+	"description": "Page as a hierarchy node",
 	"allOf": [
 		{ "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content" },
 		{ "$ref": "http://bigcontent.io/cms/schema/v2/hierarchy#/definitions/hierarchy-node" }
@@ -19,30 +19,24 @@
             "minLength": 1,
             "maxLength": 150
         },
-        "date": {
-            "title": "Creation date",
-            "description": "Creation date (YYYY-MM-DD)",
-            "type": "string",
-            "maxLength": 10,
-            "minLength": 10
-        },
-        "ranking": {
-            "title": "Ranking",
-            "description": "used for sorting blog posts",
-            "type": "number",
-            "minimum": 0,
-            "maximum": 100
-        },
         "description": {
             "title": "Description",
-            "description": "Used for blog listing page and SEO description",
+            "description": "Used for page summary and SEO description",
             "type": "string",
             "minLength": 1,
             "maxLength": 200
         },
+        "ranking": {
+            "title": "Ranking",
+            "description": "used for sorting pages",
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+        },
+       
         "image": {
             "title": "Image",
-            "description": "Used for the blog post's thumbnail and banner",
+            "description": "Used for the page banner",
             "allOf": [
                 {
                     "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
@@ -68,14 +62,9 @@
                 }
             }
         },
-        "readTime": {
-            "title": "Read time",
-            "description": "The time it takes to read the blog",
-            "type": "integer"
-        },
         "authors": {
-            "title": "Blog author",
-            "description": "Article author(s) - max 3",
+            "title": "Page author",
+            "description": "Author(s) - max 3",
             "type": "array",
             "minItems": 1,
             "maxItems": 3,
