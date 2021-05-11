@@ -43,7 +43,7 @@
 		},
 		"description": {
 			"title": "Description",
-			"description": "used for SEO met description",
+			"description": "used for SEO meta description",
 			"type": "string"
 		},
 		"ranking": {
